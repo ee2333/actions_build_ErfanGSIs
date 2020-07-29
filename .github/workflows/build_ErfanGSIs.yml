@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16th_Plus/8.20.7.24/cn_daily/20200724105105/98aa103d/update.zip
+  ROM_URL: https://hugeota.d.miui.com/20.7.21/miui_DAVINCI_20.7.21_ace30eab94_10.0.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -42,7 +42,7 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/lwh241/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/ee2333/ErfanGSIs.git
        
        - name: Setting up ErfanGSI requirements
          run: |
